@@ -16,7 +16,7 @@ const spotifyApi = new SpotifyWebApi({
   clientId: "6fc89f55a5194de4bdea50702f48bad9",
 });
 
-console.log("Sprememba v feature/client-update veji");
+console.log("Sprememba v master veji");
 
 export default function Dashboard({ code }) {
   const accessToken = useAuth(code);
@@ -128,7 +128,7 @@ export default function Dashboard({ code }) {
     spotifyApi.setAccessToken(accessToken);
     spotifyApi
       .getCategories({
-        limit: 20,
+        limit: 15,
         offset: 2,
         locale: "en-US",
       })
