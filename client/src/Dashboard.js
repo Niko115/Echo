@@ -126,7 +126,7 @@ export default function Dashboard({ code }) {
     spotifyApi.setAccessToken(accessToken);
     spotifyApi
       .getCategories({
-        limit: 15,
+        limit: 20,
         offset: 2,
         locale: "en-US",
       })
