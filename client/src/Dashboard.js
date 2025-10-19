@@ -16,7 +16,7 @@ const spotifyApi = new SpotifyWebApi({
   clientId: "6fc89f55a5194de4bdea50702f48bad9",
 });
 
-console.log("Cherry-pick");
+console.log("Revert");
 
 export default function Dashboard({ code }) {
   const accessToken = useAuth(code);
